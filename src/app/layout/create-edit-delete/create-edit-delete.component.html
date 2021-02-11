@@ -1,0 +1,31 @@
+<div class="set-margin">
+<form #form="ngForm"  (ngSubmit)="submit()">
+  <div class="form-group" >
+    <label for="id">ID</label>
+    <input type="number" class="form-control" id="id" placeholder="ID" [(ngModel)]="employee.id"  name="id">
+  </div>
+  <div class="form-group">
+    <label for="id">Name</label>
+    <input type="text" class="form-control" id="Name" placeholder="Name"  [(ngModel)]="employee.name" name="name">
+  </div>
+  <div class="form-group">
+    <label for="id">Department</label>
+    <input type="text" class="form-control" id="department" placeholder="Department" [(ngModel)]="employee.department"  name="department">
+  </div>
+  <div class="form-group">
+    <label for="id">Basic</label>
+    <input type="number" class="form-control" id="basic" placeholder="Basic" [(ngModel)]="employee.basic" name="basic">
+  </div>
+  <div class="form-group">
+    <label for="id">Bonus</label>
+    <input type="number" class="form-control" id="bonus" placeholder="Bonus" [(ngModel)]="employee.bonus"  name="bonus">
+  </div>
+  <div class="form-group">
+    <label for="id">Detention</label>
+    <input type="number" class="form-control" id="detention" placeholder="Detention" [(ngModel)]="employee.detention"  name="detention">
+  </div>
+<div>
+<button type="submit" class="btn btn-primary">Submit</button>
+</div>
+</form>
+</div>
